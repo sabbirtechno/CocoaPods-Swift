@@ -13,6 +13,7 @@
 		921FB5A323CDB747008A8297 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 921FB5A223CDB747008A8297 /* Assets.xcassets */; };
 		921FB5A623CDB747008A8297 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921FB5A423CDB747008A8297 /* LaunchScreen.storyboard */; };
 		921FB5B123CDB747008A8297 /* CocopodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921FB5B023CDB747008A8297 /* CocopodTests.swift */; };
+		E8022186A979FF0E3AEA8938 /* Pods_Cocopod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8896C4717AED16FE52F370 /* Pods_Cocopod.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D8896C4717AED16FE52F370 /* Pods_Cocopod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cocopod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DCA3AD68AC532FEE2AD94D4 /* Pods-Cocopod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cocopod.release.xcconfig"; path = "Target Support Files/Pods-Cocopod/Pods-Cocopod.release.xcconfig"; sourceTree = "<group>"; };
 		921FB59823CDB745008A8297 /* Cocopod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cocopod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		921FB59B23CDB745008A8297 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		921FB59D23CDB745008A8297 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		921FB5AC23CDB747008A8297 /* CocopodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocopodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		921FB5B023CDB747008A8297 /* CocopodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocopodTests.swift; sourceTree = "<group>"; };
 		921FB5B223CDB747008A8297 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A73C26001CBE967B82E1A34E /* Pods-Cocopod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cocopod.debug.xcconfig"; path = "Target Support Files/Pods-Cocopod/Pods-Cocopod.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8022186A979FF0E3AEA8938 /* Pods_Cocopod.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +67,8 @@
 				921FB59A23CDB745008A8297 /* Cocopod */,
 				921FB5AF23CDB747008A8297 /* CocopodTests */,
 				921FB59923CDB745008A8297 /* Products */,
+				DA153FC43B593C311AA82FB8 /* Pods */,
+				ECCC629C4767988B31902971 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +103,24 @@
 			path = CocopodTests;
 			sourceTree = "<group>";
 		};
+		DA153FC43B593C311AA82FB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A73C26001CBE967B82E1A34E /* Pods-Cocopod.debug.xcconfig */,
+				3DCA3AD68AC532FEE2AD94D4 /* Pods-Cocopod.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		ECCC629C4767988B31902971 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D8896C4717AED16FE52F370 /* Pods_Cocopod.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 921FB5B523CDB747008A8297 /* Build configuration list for PBXNativeTarget "Cocopod" */;
 			buildPhases = (
+				D7A386A1216F9766BE42DC4E /* [CP] Check Pods Manifest.lock */,
 				921FB59423CDB745008A8297 /* Sources */,
 				921FB59523CDB745008A8297 /* Frameworks */,
 				921FB59623CDB745008A8297 /* Resources */,
+				93A4BC58ED4930D774A9ED47 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +218,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		93A4BC58ED4930D774A9ED47 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cocopod/Pods-Cocopod-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cocopod/Pods-Cocopod-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cocopod/Pods-Cocopod-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7A386A1216F9766BE42DC4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cocopod-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		921FB59423CDB745008A8297 /* Sources */ = {
@@ -358,6 +427,7 @@
 		};
 		921FB5B623CDB747008A8297 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A73C26001CBE967B82E1A34E /* Pods-Cocopod.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -375,6 +445,7 @@
 		};
 		921FB5B723CDB747008A8297 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DCA3AD68AC532FEE2AD94D4 /* Pods-Cocopod.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
